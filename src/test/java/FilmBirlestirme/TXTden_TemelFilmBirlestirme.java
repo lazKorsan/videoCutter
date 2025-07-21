@@ -4,7 +4,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-public class TemelFilmBirlestirme {
+public class TXTden_TemelFilmBirlestirme {
 
     public static void main(String[] args) {
         // --- AYARLAR ---
