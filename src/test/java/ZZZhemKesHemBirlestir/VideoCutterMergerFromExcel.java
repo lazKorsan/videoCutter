@@ -5,6 +5,24 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 import java.io.*;
 import java.util.*;
+//===================================>bu kod excellden hem filmi keser hemde birleştirir.=================
+// olum varya burdaki kod hazine değerindedir Ha ben sana süleyi verem. hiç karmaşa yok. kes birleştir. işte o kadar
+// kodun çalışması için pom.xml de eksik yok.
+// excell dosyasının yolu "C:\\Users\\Hp\\OneDrive\\Desktop\\filmKesmeklik\\kesimaraliklari.xlsx"
+// kesilecek mp4 dosyasının yolu "C:\\Users\\Hp\\OneDrive\\Desktop\\filmKesmeklik\\kesilecek.mp4"
+// birleştirilmiş dosya "C:\\Users\\Hp\\OneDrive\\Desktop\\filmKesmeklik\\merged.mp4"
+// ve kesilen dosyaların listesi "C:\\Users\\Hp\\OneDrive\\Desktop\\filmKesmeklik\\filelist.txt" olarak ayarlanmıştır.
+// oldukça kullanışlı bir kod bloğu tepe tepe kullan
+// excell fprmatı birinci sütun başlangıç saniyesi, ikinci sütun bitiş saniyesi olacak şekilde ayarlanmıştır.
+// örnek excel dosyası:
+// | Başlangıç (saniye) | Bitiş (saniye) |
+// |--------------------|----------------|
+// | 0                  | 10             |
+// excell de ilk satır başlık satırı olarak kabul edilmiştir.
+
+// =========================================================================================
+
+
 
 public class VideoCutterMergerFromExcel {
 
